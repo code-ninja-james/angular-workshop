@@ -9,7 +9,7 @@ import { AuthService } from './shared/services/auth.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular 9 Fundamentals';
+  title = 'Angular Fundamentals';
   links = [
     { path: '/home', icon: 'home', title: 'Home' },
     { path: '/courses', icon: 'view_list', title: 'Courses' },

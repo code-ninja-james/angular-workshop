@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { Course } from '../interfaces/course.interface';
 import { NotificationService } from './notification.service';
 
-const BASE_URL = 'http://localhost:3000/courses';
+const BASE_URL = 'https://angular-workshop-3cb47.web.app/courses';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +22,7 @@ export class CoursesService {
 
   createCourse(course: Course) {
     this.notificationService.notify('Create Course HTTP Call');
-    return this.http.post<Course>(BASE_URL, course);
+    return this.http.post<Course>(BASE_URL,course);
   }
 
   updateCourse(course: Course) {
